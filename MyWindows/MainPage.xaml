@@ -7,18 +7,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="50" Margin="100,50,0,0" TextWrapping="Wrap"
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,323,264">
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="50" Margin="50,44,0,0" TextWrapping="Wrap"
 			Text="ＬｎｋｃｎｔＡｓｙｎｃ" VerticalAlignment="Top" Width="600" FontSize="32"/>
-        <TextBox x:Name="TextBox01" HorizontalAlignment="Left" Margin="50,0,0,161" TextWrapping="Wrap" Text="TextBox"
-			Width="1180" Height="454" VerticalAlignment="Bottom" FontSize="26.667"/>
+        <TextBox x:Name="TextBox01" HorizontalAlignment="Left" Margin="50,0,0,131" TextWrapping="Wrap" Text="TextBox"
+			Width="874" Height="226" VerticalAlignment="Bottom" FontSize="26.667"/>
 <!--
         <Button x:Name="button1" Content="LSkip" HorizontalAlignment="Right" Margin="0,0,550,50" VerticalAlignment="Bottom" Height="50" d:LayoutOverrides="LeftPosition, RightPosition" Width="200"
 			Click="button1_Click" />
         <Button x:Name="button2" Content="RSkip" HorizontalAlignment="Right" Margin="0,0,300,50" VerticalAlignment="Bottom" Height="50" Width="200"
 			Click="button2_Click" />
  -->
-        <Button x:Name="button1" Content="Lnkcnt" HorizontalAlignment="Right" Margin="0,0,300,50" VerticalAlignment="Bottom" Height="50" Width="200"
+        <Button x:Name="button1" Content="Lnkcnt" HorizontalAlignment="Right" Margin="0,0,307,50" VerticalAlignment="Bottom" Height="50" Width="200"
 			Click="button1_Click" />
         <Button x:Name="button3" Content="Reset" HorizontalAlignment="Right" Margin="0,0,50,50" VerticalAlignment="Bottom" Width="200" Height="50"
 			Click="button3_Click" />
