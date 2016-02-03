@@ -18,9 +18,9 @@ namespace LnkcntAsync
 */
         CS_LRskipAsync lrskip;      // 両側余白情報を削除
 
-        private String _wbuf;       // ソース情報
-        private Boolean _empty;     // ソース情報有無
-        private int _lnkcnt;        // ネスト情報
+        private static String _wbuf;       // ソース情報
+        private static Boolean _empty;     // ソース情報有無
+        private static int _lnkcnt;        // ネスト情報
         public String Wbuf
         {
             get
@@ -111,7 +111,7 @@ namespace LnkcntAsync
                 char[] arry = new char[_wbuf.Length];
 
                 arry = _wbuf.ToCharArray();
-                for (_pos = 0; _pos < this._wbuf.Length; _pos++)
+                for (_pos = 0; _pos < _wbuf.Length; _pos++)
                 {
                     if (arry[_pos] == '{')
                     {   // [｛]有り？
@@ -138,7 +138,7 @@ namespace LnkcntAsync
                 char[] arry = new char[_wbuf.Length];
 
                 arry = _wbuf.ToCharArray();
-                for (_pos = 0; _pos < this._wbuf.Length; _pos++)
+                for (_pos = 0; _pos < _wbuf.Length; _pos++)
                 {
                     if (arry[_pos] == '{')
                     {   // [｛]有り？

@@ -31,7 +31,7 @@ namespace MyWindows
 
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
 
             lnkcnt = new CS_LnkcntAsync();
 
