@@ -165,23 +165,25 @@ namespace LnkcntAsync
             else
             {   // 整形処理を行う
                 // 不要情報削除
-/*
-                if (rskip == null || lskip == null)
-                {   // 未定義？
-                    rskip = new CS_RskipAsync();
-                    lskip = new CS_LskipAsync();
-                }
-                rskip.Wbuf = _wbuf;
-                await rskip.ExecAsync();
-                lskip.Wbuf = rskip.Wbuf;
-                await lskip.ExecAsync();
-                _wbuf = lskip.Wbuf;
-*/
+                /*
+                                if (rskip == null || lskip == null)
+                                {   // 未定義？
+                                    rskip = new CS_RskipAsync();
+                                    lskip = new CS_LskipAsync();
+                                }
+                                rskip.Wbuf = _wbuf;
+                                await rskip.ExecAsync();
+                                lskip.Wbuf = rskip.Wbuf;
+                                await lskip.ExecAsync();
+                                _wbuf = lskip.Wbuf;
+                */
                 if (lrskip == null)
                 {   // 未定義？
                     lrskip = new CS_LRskipAsync();
                 }
                 await lrskip.ExecAsync(_wbuf);
+//                Task task = lrskip.ExecAsync(_wbuf);
+//                task.Wait();
                 _wbuf = lrskip.Wbuf;
 
                 // 作業の為の下処理
